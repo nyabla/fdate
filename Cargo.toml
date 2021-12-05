@@ -1,0 +1,13 @@
+[package]
+name = "fdate"
+version = "0.1.0"
+edition = "2018"
+
+license = "Unlicense"
+license-file = "LICENSE"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# I am choosing my battles. I do not want to do this maths.
+astro = "2.0.0"
