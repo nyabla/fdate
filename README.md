@@ -5,6 +5,26 @@ stdout.
 
 TODO: Add date input to get other dates (like ddate or date)
 
+## Formatting
+
+* `%%` - literal %
+* `%A` - name of weekday (decade-day?) or name of day during Sansculottides
+* `%B` - name of month
+* `%d` - number of day in month (0..30)
+* `%H` - decimal hour (0..9)
+* `%j` - day of year (1..366)
+* `%J` - day name according the the "rural calendar" (nothing during
+  Sansculottides)
+* `%m` - month number (1..13)
+* `%M` - decimal minute (0..99)
+* `%n` - newline
+* `%S` - decimal second (0..99)
+* `%t` - tab
+* `%u` - week (decade) number (1..3, 0 during Sansculottides)
+* `%W` - week (decade) number in roman numerals
+* `%y` - year (can be negative)
+* `%Y` - year in roman numerals (can be negative)
+
 ## Acknowledgments
 
 ### Crates
