@@ -17,26 +17,20 @@ fn main() {
 
     let republican = RepublicanDate::new(date, time);
 
-    let mut default = true;
-
     if env::args().len() == 2 {
         let arg = env::args().nth(1).unwrap();
         if Some('+') == arg.chars().nth(0) {
             if let Some(fmt) = arg.get(1..) {
                 println!("{}", republican.format_str(fmt));
-                default = false;
             } else {
                 usage();
-                default = false;
             }
         } else {
             usage();
-            default = false;
         }
     } else if env::args().len() > 2 {
         usage();
-        default = false;
-    } else if default {
+    } else {
         println!("{}", republican.format_str(DEFAULT_FMT));
     }
 
