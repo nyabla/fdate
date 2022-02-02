@@ -297,7 +297,7 @@ const RURAL: [&str; 360] = [
     "Peuplier",
     "Coignée",
     "Ellébore",
-    "{{Not a typo",
+    "Brocoli",
     "Laurier",
     "Avelinier",
     "Vache",
